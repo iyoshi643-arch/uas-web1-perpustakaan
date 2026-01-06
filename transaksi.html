@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="logo.png">
+    <h1>Transaksi Peminjaman Buku</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Form Peminjaman Buku</h2>
+
+    <form onsubmit="return validasi()">
+        <label>Nama Peminjam:</label><br>
+        <input type="text" id="nama"><br><br>
+
+        <label>Judul Buku:</label><br>
+        <input type="text" id="buku"><br><br>
+
+        <label>Jumlah Buku:</label><br>
+        <input type="number" id="jumlah"><br><br>
+
+        <button type="submit">Simpan</button>
+    </form>
+
+    <h2>Daftar Peminjaman</h2>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Nama Peminjam</th>
+            <th>Judul Buku</th>
+            <th>Jumlah</th>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>Algoritma Dasar</td>
+            <td>1</td>
+        </tr>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2026 UNPAM</p>
+</footer>
+
+</body>
+</html>
